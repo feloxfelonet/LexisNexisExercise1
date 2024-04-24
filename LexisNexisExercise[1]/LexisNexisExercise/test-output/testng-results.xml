@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38834" started-at="2024-04-24T12:43:55Z" finished-at="2024-04-24T12:44:34Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@396a51ab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="38834" started-at="2024-04-24T12:43:55Z" finished-at="2024-04-24T12:44:34Z">
+      <class name="TestRunner.CucumberTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.CucumberTestRunner@396a51ab]" name="setUpClass" is-config="true" duration-ms="500" started-at="2024-04-24T18:13:55Z" finished-at="2024-04-24T18:13:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c69362a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberTestRunner@396a51ab]" name="runScenario" duration-ms="38297" started-at="2024-04-24T18:13:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-24T18:14:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check financial service compliance information is available"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["LexisNexis get financial service information"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Financial Crime Compliance header text not matached expected [Making financial crime prevention simples] but found [Making financial crime prevention simple]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Financial Crime Compliance header text not matached expected [Making financial crime prevention simples] but found [Making financial crime prevention simple]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at pages.FinancialCrimeCompliancePage.verifyHeader(FinancialCrimeCompliancePage.java:18)
+	at StepDefinitions.FinancialCrimeComplianceStepDefinitions.user_clicks_on_financial_Crime_compliance_link(FinancialCrimeComplianceStepDefinitions.java:15)
+	at ?.Verify the title page is matched(file:///D:/Workspace/src/test/resources/Features/LexisNexis.feature:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.CucumberTestRunner@396a51ab]" name="tearDownClass" is-config="true" duration-ms="27" started-at="2024-04-24T18:14:34Z" finished-at="2024-04-24T18:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.CucumberTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
